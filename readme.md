@@ -4,13 +4,12 @@ I build governed AI systems, orchestration layers, and production AI infrastruct
 
 My work focuses on deterministic control layers around probabilistic AI systems, combining workflow orchestration, validation, auditability, evidence traceability, and operational reliability.
 
-Most current work is private due to commercial, legal, and enterprise confidentiality requirements.
-
-Public repositories demonstrate selected architecture, orchestration, evaluation, and infrastructure patterns from active production systems.
+Most current work is private due to commercial, legal, and enterprise confidentiality requirements. The infrastructure layer is open source below. Consulting (AI cost and execution audits, architecture reviews, implementation) runs through [Super Web Guys](https://superwebguys.com) and [Jedi Concepts](https://jediconcepts.com).
 
 ## Current Focus
 
 - AI execution and orchestration systems
+- AI cost architecture and spend governance
 - Multi model routing and provider abstraction
 - Evidence intelligence pipelines
 - Agent governance and validation layers
@@ -19,15 +18,28 @@ Public repositories demonstrate selected architecture, orchestration, evaluation
 - Probantum
 - LawBow
 
-## Featured Repositories
+## Open Source
 
-### makemycase
-Evidence intelligence and workflow orchestration platform exploring structured assertions, litigation workflows, contradiction analysis, and traceable AI assisted review systems.
+### [ai-execution-router](https://github.com/JediConcepts/ai-execution-router)
 
-### ai-execution-router
-Deterministic execution layer for multi provider AI orchestration with explicit separation between execution, policy, routing, and governance.
+> The router executes. The controller decides.
 
-### probantum-site
+A deterministic execution engine for LLM calls. One function, `complete()`: takes a fully resolved request, calls one provider once, returns one result with typed errors and usage telemetry. Policy, routing, fallback, cost guards, and audit live in a thin controller on the caller's side; the router itself never decides. Zero runtime dependencies, MIT.
+
+```sh
+npm install ai-execution-router
+```
+
+### [local-cli-bridge](https://github.com/JediConcepts/local-cli-bridge)
+
+Makes locally authenticated CLI model tools look like an OpenAI compatible server, with an optional Cloudflare Tunnel launcher. A development and testing bridge, not a hosted model service. Zero dependencies, MIT.
+
+```sh
+npx local-cli-bridge
+```
+
+### [probantum-site](https://github.com/JediConcepts/probantum-site)
+
 Public product and positioning layer for Probantum, a practitioner facing evidence intelligence platform.
 
 ## Engineering Themes
