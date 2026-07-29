@@ -15,8 +15,7 @@ Most current work is private due to commercial, legal, and enterprise confidenti
 - Agent governance and validation layers
 - Workflow integrated AI systems
 - Structured reasoning and assertion analysis
-- Probantum
-- LawBow
+- Reality Inference Evaluation
 
 ## Open Source
 
