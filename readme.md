@@ -37,10 +37,6 @@ Makes locally authenticated CLI model tools look like an OpenAI compatible serve
 npx local-cli-bridge
 ```
 
-### [probantum-site](https://github.com/JediConcepts/probantum-site)
-
-Public product and positioning layer for Probantum, a practitioner facing evidence intelligence platform.
-
 ## Engineering Themes
 
 - TypeScript
